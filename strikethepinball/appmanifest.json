@@ -1,0 +1,10 @@
+{
+	"name": "Strike The Pinball",
+	"short_name": "Goal Pinball Jungle",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": []
+}

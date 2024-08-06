@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.xxx-game-iframe-iphone-se {
+    height: 226px !important;
+}
+
+.xxx-ios-fullscreen-message {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    user-select: none;
+    touch-action: none;
+}
+
+.xxx-ios-fullscreen-scroll {
+    width: 100vw;
+    height: 120vh;
+    position: absolute;
+    z-index: 10001;
+    top: 0px;
+    left: 0px;
+    display: none;
+    user-select: none;
+    touch-action: none;
+}
+
+.xxx-ios-fullscreen-swipe {
+    width: 30%;
+    height: 30%;
+    background-image: url("../sprites/swipe.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: 1.5s ease 0s infinite normal none running xxx-animation-ios-swipe;
+    user-select: none;
+    touch-action: none;
+    transform: translate(-50%, -50%) !important;
+}
+
+@keyframes xxx-animation-ios-swipe {
+    0%,
+    100% {
+        top: 40%;
+    }
+    50% {
+        top: 60%;
+    }
+}

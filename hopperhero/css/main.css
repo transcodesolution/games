@@ -1,0 +1,50 @@
+root {
+    display: block;
+}
+
+body {
+    background-color: rgb(39, 134, 238);
+    background-repeat: repeat-x;
+    background-position: center top;
+    background-image: url("../sprites/bg_tile.jpg");
+}
+
+*,
+::before,
+::after {
+    user-select: none;
+}
+
+input,
+input::before,
+input::after {
+    user-select: initial;
+}
+
+::selection {
+    background: transparent;
+    color: inherit;
+}
+
+#canvas {
+    position: fixed;
+}
+
+canvas {
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.ani_hack {
+    perspective: 1000px;
+    backface-visibility: hidden;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+    font-family: walibi;
+    src: url("walibi-holland-webfont.woff2") format("woff2"), url("walibi-holland-webfont.woff") format("woff"), url("walibi-holland-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
